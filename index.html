@@ -5,10 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300&family=Lato:wght@100;300;400;900&family=Lobster&family=Major+Mono+Display&family=Mea+Culpa&family=Montserrat:wght@600&family=Mr+Dafoe&display=swap');
+        </style>
     <title>Document</title>
 </head>
 <body>
     
+    <main class="container">
+        <div class="div-gauche">
+            <div class="header-p">
+                <h2>PLAYER 1</h2>
+                <h3 id="p1_score">0</h3>
+            </div>
+            <div class="current">
+                <p>CURRENT</p>
+                <p class="current-score" id="p1_current">0</p>
+            </div>
+        </div>
+        <div class="div-droite">
+            <div class="header-p">
+                <h2>PLAYER 2</h2>
+                <h3 id="p2_score">0</h3>
+            </div>
+            <div class="current">
+                <p>CURRENT</p>
+                <p class="current-score" id="p2_current">0</p>
+            </div>
+        </div>
+        <div class="div-centrale">
+            <button class="btn" id="new_btn"><img src="./ressources/icon/plus.png" alt="" class="icon"> new game</button>
+            <div class="des" id="des">des</div>
+            <button class="btn" id="roll_btn"><img src="./ressources/icon/reload.png" alt="" class="icon"> rolls</button>
+            <button class="btn" id="hold_btn"><img src="./ressources/icon/download.png" alt="" class="icon"> hold</button>
+        </div>
+    </main>
 
     <script src="script.js"></script>
 </body>
