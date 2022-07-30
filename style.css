@@ -48,6 +48,9 @@ h2, h3{
     background-color: #ff4757;
     font-weight: 800;
 }
+.current p{
+    font-size: 1.5rem;
+}
 .current-score{
     font-size: 4rem;
     font-weight: 100;
@@ -71,6 +74,7 @@ h2, h3{
     align-items: center;
     justify-content: center;
     text-align: center;
+    font-size: 3rem;
     
 
 }
@@ -88,4 +92,40 @@ h2, h3{
 }
 .icon{
     width: 30px;
+}
+@media screen and (max-width:1200px){
+    html{
+        font-size: 80%;
+    }
+}
+@media screen and (max-width:900px){
+    html{
+        font-size: 60%;
+    }
+}
+@media screen and (max-width:700px){
+    .container{
+        flex-direction: column;
+        
+    }
+    .div-gauche, .div-droite{
+        width: 100%;
+    }
+    .div-gauche{
+        justify-content: flex-start;
+    }
+    .div-droite{
+        justify-content: flex-end;
+    }
+    .div-centrale{
+        top: 50%;
+        left: 0;
+        height: 100px;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        transform: translateX(0);
+        transform: translateY(-50%);
+    }
 }
