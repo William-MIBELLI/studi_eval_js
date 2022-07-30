@@ -6,6 +6,12 @@
 h2{
     font-size: 6rem;
 }
+.active::after{
+    content: ".";
+    color: #ff4757;
+    font-size: 6rem;
+    margin-left: 20px;
+}
 h3{
     font-size: 8rem;
     color: #ff4757;
@@ -61,12 +67,24 @@ h2, h3{
     height:150px;
     background-color: white;
     box-shadow: 5px 5px 15px lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+
 }
 .btn{
     font-size: 2.5rem;
     font-weight: 200;
     border: none;
     background-color: transparent;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+.btn:hover{
+    transform: scale(1.05);
+    transform: all 0.2s ease;
 }
 .icon{
     width: 30px;
